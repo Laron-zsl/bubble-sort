@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <title>Bubble.it</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome\css\all.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="brand-title"><a href="index.html">Bubble.it</a></div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="howItWorks.html">How it works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="how-it-works-main">
+        <div class="introduction">
+            <h1>How does <span class="red-highlight">bubble sort</span> work? <u class="click-me">Click me to find out</u></h1>
+            <p>If you are on mobile then click arrows in order to show next steps</p>
+        </div>
+        
+
+        <div class="steps">
+            <div class="step first-step">
+                <p>First we have to create an array of numbers, for example 1, 3, 4, 2</p>
+            </div>
+
+            <button class="arrow-down first-arrow">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+
+            <div class="step second-step">
+                <p>Then we check which of two adjecent numbers starting from left is greater <span class="red-highlight">1</span>, <span class="red-highlight">3</span>, 4, 2</p>
+            </div>
+
+            <button class="arrow-down second-arrow">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+
+            <div class="step third-step">
+                <p>If it is smaller, then we leave it as it is and go to the next pair of numbers to compare so this time we compare 1, <span class="red-highlight">3</span>, <span class="red-highlight">4</span>, 2</p>
+            </div>
+
+            <button class="arrow-down third-arrow">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+
+            <div class="step fourth-step">
+                <p>3 is smaller than 4 so we leave it as it is and go to the next pair</p>
+            </div>
+
+            <button class="arrow-down fourth-arrow">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+
+            <div class="step fifth-step">
+                <p>If it is greater like in this example 1, 3, <span class="red-highlight">4</span>, <span class="red-highlight">2</span></p>
+            </div>
+
+            <button class="arrow-down fifth-arrow">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+
+            <div class="step sixth-step">
+                <p>We just swap their positions and start again from the start with an array looking like this 1, 3, 2, 4</p>
+            </div>
+
+            <button class="arrow-down sixth-arrow">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+
+            <div class="step seventh-step">
+                <p>The process is repeated, so we compare <span class="red-highlight">1</span>, <span class="red-highlight">3</span>, 2, 4</p>
+            </div>
+
+            <button class="arrow-down seventh-arrow">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+
+            <div class="step eighth-step">
+                <p>We already know that 1 is smaller than 3 so we go to the next pair and compare 1, <span class="red-highlight">3</span>, <span class="red-highlight">2</span>, 4</p>
+            </div>
+
+            <button class="arrow-down eighth-arrow">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+
+            <div class="step nineth-step">
+                <p>3 is greater than 2 so we swap them around 1, 2, 3, 4</p>
+            </div>
+
+            <button class="arrow-down nineth-arrow">
+                <i class="fas fa-arrow-down"></i>
+            </button>
+
+            <div class="step tenth-step">
+                <p>And 3 is smaller than 4 so we leave it as it is, and by doing so we sorted our array 1, 2, 3, 4 <span class="red-highlight">!!!</span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer contact-footer">
+            <div class="where-to-find-me where-to-find-me-contact-page"><p>You can also find me on various platforms such as:</p></div>
+            <div class="social-links-contact-page">
+                <ul>
+                    <li><a href="https://github.com/Laron-zsl"><i class="fab fa-3x fa-github"></i></a></li>
+                    <li><a href="https://twitter.com/Laron_official"><i class="fab fa-3x fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=100007865025856"><i class="fab fa-3x fa-facebook"></a></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
